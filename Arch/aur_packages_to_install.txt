@@ -1,0 +1,12 @@
+#arc-firefox-theme
+bfg
+bytecode-viewer
+dropbox
+krakatau-git
+masterpdfeditor
+numix-icon-theme-git
+oh-my-zsh-git
+polybar
+rstudio-desktop-bin
+shutter
+tmuxinator

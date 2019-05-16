@@ -1,0 +1,108 @@
+# Fonts/Themes
+adobe-source-code-pro-fonts
+awesome-terminal-fonts
+arc-gtk-theme
+ttf-fira-code
+ttf-font-awesome
+# Sound
+alsa-utils
+# File viewers
+evince
+# Browsers
+firefox
+chromium
+# File manager
+dolphin
+dolphin-plugins
+# Text editors
+emacs
+vim
+# Archive viewer
+engrampa
+glibc
+
+# Haskell tools
+hindent
+hlint
+hoogle
+alex
+happy
+stack
+stylish-haskell
+# Static website generator
+hugo
+# TeX
+texinfo
+texlive-bibtexextra
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-humanities
+texlive-latexextra
+texlive-pictures
+texlive-pstricks
+texlive-science
+# X11
+xorg
+xorg-twm
+xorg-xev
+xorg-xinit
+xorg-xinput
+xorg-xprop
+xorg-xrandr
+xterm
+# Misc
+sudo
+git
+colordiff
+autojump
+feh
+htop
+iotop
+i3lock
+jdk8-openjdk
+kde-gtk-config
+keepassxc
+konsole
+lxappearance
+make
+ncdu
+netctl
+network-manager-applet
+networkmanager
+networkmanager-openvpn
+notification-daemon
+notify-osd
+ntfs-3g
+numix-gtk-theme
+ocaml
+octave
+openconnect
+openssh
+openvpn
+otf-fira-code
+pandoc
+pavucontrol
+pinta
+pulseaudio
+pulseaudio-alsa
+python-async-timeout
+python-flask
+python-pillow
+python-pip
+python-pylast
+python-requests
+python-selenium
+python-sympy
+qt5ct
+r
+redshift
+remmina
+speedtest-cli
+thunderbird
+tmux
+wget
+xfce4-terminal
+youtube-dl
+zsh
+zsh-autosuggestions
