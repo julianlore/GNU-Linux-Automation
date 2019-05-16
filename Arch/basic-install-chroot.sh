@@ -8,7 +8,8 @@ ln -sf /usr/share/zoneinfo/America/Toronto /etc/localtime
 echo "Generating /etc/adjtime"
 hwclock --systohc
 
-# Copy over locale.gen (scp -P 3022 locale.gen root@127.0.0.1:/etc/) or use sed
+echo "Copying locale.gen"
+cp locale.gen /etc
 echo "Generating pre-specified locales"
 locale-gen
 
@@ -25,8 +26,9 @@ echo "127.0.1.1    ArchVM.localdomain ArchVM" >> /etc/hosts
 echo "Set root password" # Can be pre-defined or ask for user input
 passwd
 
-echo "Installing bootloader (syslinux)"
-pacman -S syslinux
-syslinux-install_update -i -a -m
+echo "Installing bootloader (grub)"
+pacman -S --noconfirm grub
+grub-install --target=i386-pc /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
 
-# Might need to check generated /boot/syslinux/syslinux.cfg if configured properly, the one I generated pointed to non existent partition?
+systemctl enable dhcpcd

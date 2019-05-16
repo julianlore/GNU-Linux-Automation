@@ -33,11 +33,12 @@ mount /dev/sda1 /mnt
 echo "Make home mount point and mount"
 mkdir /mnt/home
 mount /dev/sda2 /mnt/home
-
+mkdir /mnt/home/scripts
+cp * /mnt/home/scripts # Copy over scripts
 # Copy mirrorlist in advance (scp -P 3022 mirrorlist root@127.0.0.1:/etc/pacman.d) or use sed
 
 echo "Installing base and base-devel packages"
-pacstrap /mnt base
+pacstrap /mnt base base-devel
 
 echo "Generate fstab"
 genfstab -U /mnt >> /mnt/etc/fstab
