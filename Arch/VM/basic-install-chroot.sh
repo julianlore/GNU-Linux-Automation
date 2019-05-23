@@ -1,0 +1,1 @@
+../Common/basic-install-chroot.sh
